@@ -9,6 +9,7 @@ require_once 'app/Core/Router.php';
 /*use DonaMaria\Controllers\ErroController;
 use DonaMaria\Controllers\HomeController;
 use DonaMaria\Controllers\LoginController;*/
+use DonaMaria\Core\Router;
 
 require __DIR__ . "/vendor/autoload.php";
 /*require __DIR__ . "/app/config.php";
@@ -20,17 +21,16 @@ function css(string $arquivo)
 }
 
 
-
-
 const PASTA_VIEW = "./app/Views/";
 const NS_CONTROLLERS = "\\DonaMaria\\Controllers\\";
 
 $url = $_GET['url'] ?? "";
 $url = "/".$url;
-
-/*Router::add('/','HomeController','index');
+/*
+Router::add('/','HomeController','index');
 Router::add('/login','LoginController','login');
 Router::add('/cadastro','CadastroController','Login');
+Router::add('__erro','ErroController','criarconta');
 */
 
 $rotas = [];

@@ -10,7 +10,7 @@
 
     <header>
         <div class="logo-topo">
-            <a href="../index.php"><img src="../imagens/elementos-do-site/logo-dona-maria-1.png"></a>
+            <a href="http://localhost/dona-maria-cortinas-cia/public//index.php"><img src="http://localhost/dona-maria-cortinas-cia/public//imagens/elementos-do-site/logo-dona-maria-1.png"></a>
         </div>
         
         <div class="barra-pesquisa">
@@ -19,15 +19,15 @@
                     <input type="text" id="nome" name="nome" placeholder="O que você procura?" required>
                 </label>
 
-                <button><img src="../imagens/elementos-do-site/lupa.png"></button>
+                <button><img src="http://localhost/dona-maria-cortinas-cia/public//imagens/elementos-do-site/lupa.png"></button>
             </form>
         </div>
 
         <div id="menu-topo">
             <ul>
-                <li><a href="login.html"><img src="../imagens/elementos-do-site/entrar.png"></a></li>
-                <li><a href="favoritos.php"><img src="../imagens/elementos-do-site/favoritos.png"></a></li>
-                <li><a href="carrinho.html"><img src="../imagens/elementos-do-site/carrinho.png"></a></li>
+                <li><a href="http://localhost/dona-maria-cortinas-cia/public/login.html"><img src="../imagens/elementos-do-site/entrar.png"></a></li>
+                <li><a href="http://localhost/dona-maria-cortinas-cia/public/favoritos.php"><img src="../imagens/elementos-do-site/favoritos.png"></a></li>
+                <li><a href="http://localhost/dona-maria-cortinas-cia/public/carrinho.html"><img src="http://localhost/dona-maria-cortinas-cia/public/imagens/elementos-do-site/carrinho.png"></a></li>
             </ul>
         </div>
     </header>

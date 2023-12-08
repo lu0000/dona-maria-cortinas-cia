@@ -8,8 +8,6 @@ class Router{
 
     public function add(string $rota, string $controller, string  $acao)
     {
-        $rota = ltrim($rota, '/');
-        echo $rota;
         static::$rotas[$rota] = [$controller,$acao];
 
     }

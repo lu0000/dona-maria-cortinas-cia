@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo-topo">
-            <a href="index.php"><img src="imagens/elementos-do-site/logo-dona-maria-1.png"></a>
+            <a href="index.php"><img src="http://localhost/dona-maria-cortinas-cia/public/imagens/elementos-do-site/logo-dona-maria-1.png"></a>
         </div>
         
         <div class="barra-pesquisa">
@@ -21,15 +21,15 @@
                     <input type="text" id="nome" name="nome" placeholder="O que você procura?" required>
                 </label>
 
-                <button><img src="imagens/elementos-do-site/lupa.png"></button>
+                <button><img src="http://localhost/dona-maria-cortinas-cia/public/imagens/elementos-do-site/lupa.png"></button>
             </form>
         </div>
 
         <div id="menu-topo">
             <ul>
-                <li><a href="paginas/login.html"><img src="imagens/elementos-do-site/entrar.png"></a></li>
-                <li><a href="paginas/favoritos.php"><img src="imagens/elementos-do-site/favoritos.png"></a></li>
-                <li><a href="paginas/carrinho.html"><img src="imagens/elementos-do-site/carrinho.png"></a></li>
+                <li><a href="paginas/login.html"><img src="http://localhost/dona-maria-cortinas-cia/public/imagens/elementos-do-site/entrar.png"></a></li>
+                <li><a href="http://localhost/dona-maria-cortinas-cia/public/paginas/favoritos.php"><img src="http://localhost/dona-maria-cortinas-cia/public/imagens/elementos-do-site/favoritos.png"></a></li>
+                <li><a href="http://localhost/dona-maria-cortinas-cia/public/paginas/carrinho.html"><img src="http://localhost/dona-maria-cortinas-cia/public/imagens/elementos-do-site/carrinho.png"></a></li>
             </ul>
         </div>
 
@@ -39,26 +39,26 @@
 
         <div class="banner-top"><!--Banner-->
             <a href="">
-                <img src="imagens/banner/cortinas-banner.jpg" alt="banner">
+                <img src="http://localhost/dona-maria-cortinas-cia/public/imagens/banner/cortinas-banner.jpg" alt="banner">
             </a>
         </div>
 
         <section class="categorias"><!--Categorias-->
             <div class="cat">
                 <h1>Cortinas</h1>
-                <div><a href="paginas/cortinas.php"><img src="imagens/cortinas/1.jpg" alt=""></a></div>
+                <div><a href="paginas/cortinas.php"><img src="http://localhost/dona-maria-cortinas-cia/public/imagens/cortinas/1.jpg" alt=""></a></div>
             </div>
             <div class="cat">
                 <h1>Percianas</h1>
-                <div><a href="paginas/percianas.php"><img src="imagens/persianas/1.jpg" alt=""></a></div>
+                <div><a href="http://localhost/dona-maria-cortinas-cia/public/paginas/percianas.php"><img src="imagens/persianas/1.jpg" alt=""></a></div>
             </div>
             <div class="cat">
                 <h1>Divisoria hospitalares</h1>
-                <div><a href="paginas/divisoriashospitalares.php"><img src="imagens/divisorias hospitalares/1.jpg" alt=""></a></div>
+                <div><a href="http://localhost/dona-maria-cortinas-cia/public/paginas/divisoriashospitalares.php"><img src="imagens/divisorias hospitalares/1.jpg" alt=""></a></div>
             </div>
             <div class="cat">
                 <h1>Toldos</h1>
-                <div><a href="paginas/toldos.php"><img src="imagens/toldos/1.jpg" alt=""></a></div>
+                <div><a href="http://localhost/dona-maria-cortinas-cia/public/paginas/toldos.php"><img src="imagens/toldos/1.jpg" alt=""></a></div>
             </div>
         </section>
 
@@ -66,7 +66,7 @@
 
             <div class="banner-categoria"><!--Banner-->
                 <a href="">
-                    <img src="imagens/banner/banner-promocao.png" alt="banner da categoria">
+                    <img src="http://localhost/dona-maria-cortinas-cia/public/imagens/banner/banner-promocao.png" alt="banner da categoria">
                 </a>
             </div>
 
