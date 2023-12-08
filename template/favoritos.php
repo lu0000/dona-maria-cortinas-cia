@@ -1,11 +1,16 @@
+<?php
+    require "../arrays.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../estilo.css" rel="stylesheet">
-        <title>Login</title>
+        <title>Favoritos</title>
 </head>
+
 <body>
 
     <header>
@@ -32,25 +37,37 @@
         </div>
     </header>
 
-    <main class="cadastro-login"><!--Corpo do Site-->
+<main class="favoritos-principal"><!--Corpo do Site-->
+    
+    <div favoritos class="favoritos">
 
-        <h2 class="cadastrotitulo">Login</h2>
+        <div class="titulo-carrinho">
+            <h2>Meu Carrinho</h2>
+            <a href="../index.php"><button>Continuar Comprando ></button></a>
+        </div>
 
-        <div class="pagina">
-            <div class="formulario_login">
-                <form action="cadastro.html" method="post">
-                    <label>E-mail:
-                        <input type="email" id="email" name="email" required>
-                    </label>
-                    <label>Senha:
-                        <input type="password" id="senha" name="senha" required>
-                    </label>
-
-                    <button class="butaocalo"> Entrar </button>
-                </form>
-                <p class="cap">Não tem uma conta?  <a class="caa" href="cadastro.html">Cadastre-se</a></p>
+        <div class="sub-favoritos">
+            <div class="bloco-itensf">
+                <?php
+                    foreach($favoritos as $i => $f){
+                ?>
+                <div class="itens">
+                    <a href="visualizarfavoritos.php?i=<?=$i?>">
+                        <div class="itens-img"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
+                        <div class="itens-descricao">
+                            <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
+                            <h1><?=$f["preco"]?></h1>
+                        </div>
+                    </a>
+                </div>
+                <?php
+                    }
+                ?>
             </div>
         </div>
+
+    </div>
+
     </main>
 
     <footer><!--Rodapé do Site-->

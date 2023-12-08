@@ -1,11 +1,13 @@
-
+<?php
+    require "arrays.php";
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?=css('estilo')?>" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
     <title>Dona Maria Cortinas & Cia</title>
 </head>
 

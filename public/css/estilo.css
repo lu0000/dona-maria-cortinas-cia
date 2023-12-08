@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FDF4FA;
+    font-family: Arial, sans-serif;
+}
+
+/*Topo do site---------------------------------------------------------------------*/
+header{
+    top: 0;
+    background-color: #D13A65;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 0;
+}
+header .barra-pesquisa{
+    width: 40%;
+    height: 50%;
+}
+header .barra-pesquisa form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .barra-pesquisa label{
+    width: 80%;
+    margin-right: 1rem;
+}
+header .barra-pesquisa input{
+    width: 100%;
+    height: 50px;
+    background-color: #FDF4FA;
+    border: none;
+    padding: 1rem; 
+    border-radius: 4px;
+}
+header .barra-pesquisa button{
+    background-color: #FDF4FA;
+    height: 50px;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 4px;
+}
+
+#menu-topo{
+    width: 20%;
+}
+#menu-topo ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#menu-topo li{
+    cursor: pointer;
+}
+main{
+    background-color: #FFF;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+.banner-top{/*Banner--------------------------------------------------------------------*/
+    width: 100%;
+}
+.banner-top img{
+    width: 100%;
+    height: 100%;
+}
+.categorias{/*Categorias--------------------------------------------------------------------*/
+    background-color: #e0e6e6;
+    padding: 1rem 16%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cat{
+    width: 23%;
+    height: 13rem;
+    background-color: #c5caca;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cat div{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao aplicar zoom */
+}
+.cat img{
+    width: 100%;
+    height: 100%;
+}
+
+.cat div:hover{
+    transform: scale(1.2);
+}
+.categoria{
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem 16%;
+}
+.categoria img{
+    width: 100%;
+    height: 100%;
+}
+.banner-categoria{
+    width: 100%;
+    height: 21.5rem;
+}
+.titulo-categoria{
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0 50px;
+}
+/* itens/produtos ---------------------------------------*/
+.bloco-itens{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    justify-content: center;
+    gap: 30px;
+}
+.itens{
+    height: 27rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid rgba(236, 229, 229, 0.451);
+}
+.itens-img{
+    height: 17rem;
+}
+.itens-descricao{
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+.itens-descricao div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    justify-content: start;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.itens:hover{
+    box-shadow: 
+    2px 0 10px -3px rgba(99, 98, 98, 0.2), /* Sombra à direita */
+    -2px 0 10px -3px rgba(99, 98, 98, 0.2); /* Sombra à esquerda */
+}
+.texto-limitado {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Mostrar apenas 3 linhas de texto */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.carrinho{
+    padding: 1rem 16%;
+}
+.titulo-carrinho{
+    background-color: #FDF4FA;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+}
+.titulo-carrinho h2{
+    text-decoration: none;
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: normal;
+}
+.titulo-carrinho a{
+    text-decoration: none;
+    color: #000;
+}
+.titulo-carrinho button{
+    background-color: #F07481;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.titulo-carrinho button:hover {
+    background-color: #ec6472;
+}
+.compras-do-carrinho{
+    margin-top: 1rem;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 70% repeat(1, 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
+.produtos-carrinho{
+    display: flex;
+    flex-direction: column;
+}
+.pro-carrinho{
+    background-color: #FDF4FA;
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    border-radius: 8px;
+}
+.img-carrinho{
+    width: 15rem;
+    height: 100%;
+    margin-right: 1rem;
+}
+.img-carrinho img{
+    width: 100%;
+    height: 100%;
+}
+.pro-car-informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carrinho-text p{
+    margin-bottom: 10px;
+}
+.comprar-carrinho{
+    display: flex;
+    flex-direction: column;
+}
+.frete{
+    background-color: #FDF4FA;
+    height: 15rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.input-frete{
+    width: 260px;
+    height: 37px;
+    padding: 8px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #565151;
+}
+.frete p{
+    margin: 10px 0;
+}
+.preco{
+    background-color: #FDF4FA;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.adicionar-lixeira{
+    display: flex;
+}
+
+.adicionar-carrinho{
+    border: 1px solid #565151;
+    border-radius: 8px;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    padding: 0.1rem;
+    vertical-align: middle;
+}
+
+.adicionar-carrinho button{
+    height: 85%;
+    width: 20%;
+    background-color: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    padding: 0.2rem;
+    
+}
+
+.adicionar-carrinho img{
+    height: 98%;
+    width: 98%;
+}
+
+.adicionar-carrinho p{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.mais{
+    margin-left: auto;
+    margin-right: 26%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.menos{
+    margin-right: auto;
+    margin-left: 26%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.lixeira-carrinho{
+    margin-right: auto;
+    
+}
+
+.lixeira-carrinho img{
+    margin: 2px;
+    height: 70%;
+    width: 88%;
+}
+
+/*Rodapé do site---------------------------------------------------------------------*/
+footer{
+    background-color: #D13A65;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*CADASTRO---------------------------------------------------------------------------*/
+.cadastro-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastrotitulo{
+    color: #D13A65;
+    text-align: center;
+    padding: 3rem 0 1rem;
+}
+.pagina{
+    display: flex;
+	justify-content: center;
+}
+.formulario_cadastro{
+    background-color: #fbf9f8;
+    border: 1px solid #d4d1d1;
+    padding: 1rem; 
+    height: 440px;
+    width: 310px;
+    border-radius: 4px;
+    
+}
+.formulario_login{
+    background-color: #fbf9f8;
+    border: 1px solid #d4d1d1;
+    padding: 1rem; 
+    height: 295;
+    width: 310px;
+    border-radius: 4px;
+}
+.pagina input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    background-color: #ffffff;
+	padding: 8px;
+	margin-bottom: 20px;
+    margin-top:3px;
+	width: 100%;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+    border: 1px solid #d4d1d1;
+    border-radius: 4px;
+}
+
+.butaocalo{
+    padding: 10px;
+	margin-bottom: 20px;
+    margin-top: 8px;
+	width: 100%;
+    border: 1px solid #d4d1d1;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color:  #d3446d;
+}
+.butaocalo:hover{
+    background-color: #d4708d;
+    cursor: pointer;
+}
+.cap{
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.caa{
+    margin-left: 4px;
+    text-decoration: none;
+    color: #FF1493;
+    cursor: pointer;
+}
+
+
+/* COMPRA ---------------------------------------------------*/
+
+#visualizar{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.visualizarproduto{
+    background-color: white;
+    width: 40%;
+    height: 36rem;
+    margin-right: 1rem;
+    padding: 2rem 0.8rem;
+    box-shadow: 
+    2px 0 10px -3px rgba(99, 98, 98, 0.2), /* Sombra à direita */
+    -2px 0 10px -3px rgba(99, 98, 98, 0.2); /* Sombra à esquerda */;
+}
+.visualizarimg{
+    width: 100%;
+    height: 25rem;
+}
+.visualizarimg img{
+    width: 100%;
+    height: 100%;
+}
+.infor{
+    background-color: white;
+    width: 30%;
+    height: 36rem;
+    padding: 2rem 0.8rem;
+    word-break: break-all;
+    box-shadow: 
+    2px 0 10px -3px rgba(99, 98, 98, 0.2), /* Sombra à direita */
+    -2px 0 10px -3px rgba(99, 98, 98, 0.2); /* Sombra à esquerda */;
+}
+.tituloinfor{
+    color: #1C1C1C;
+    margin-bottom: 2rem;
+}
+.precoinfor{
+    color: #1C1C1C;
+    margin-bottom: 1rem;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0px 20px 0px;
+    font-size: 20px;
+    background-color: #FF69B4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #FF1493;
+}
+
+/* Estilo de foco para acessibilidade */
+.itens button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.8);
+}
+.detalhes{
+    color: #1C1C1C;
+    margin-top: 2rem;
+    word-break: break-all;
+}
+.titulo_descricao{
+    font-size: 20px;
+    margin: 4px;
+
+}
+.descricao{
+    margin: 4px;
+}
+
+/* Paginas dos Produtos */
+
+.bloco-itenspg{
+    display: grid;
+    grid-template-columns: repeat(6, 15%);
+    justify-content: center;
+    padding-top: 1rem;
+    gap: 30px;
+}
+.bloco-itenspg img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Favoritos ---------------------------------------------------------------------*/
+
+.favoritos{
+    padding: 1rem 16%;
+}
+.bloco-itensf{
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    justify-content: center;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+.bloco-itensf img{
+    width: 100%;
+    height: 100%;
+}
